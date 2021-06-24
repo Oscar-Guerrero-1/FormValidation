@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "./styles.css">
+</head>
+<body>
+    <div class = "container">
+        <!-- User Login Form-->
+        <form class = "form" id = "login">
+            <h1 class = "formTitle">Login</h1>
+            <div class = "formMessage formMessageError"></div>
+            <div class = "formInputGroup"> 
+                <input type = "text" class="formInput" id = "loginUser" id = "loginName" autofocus placeholder="Username or Email" required>
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <div class = "formInputGroup"> 
+                <input type = "password" class="formInput" id = "loginUser" id = "loginPassword" autofocus placeholder="Password" required>
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <button type = "submit" class="formButton">Continue</button>
+            <p class="formText">
+                <a href="./" class = "formLink"  id = "linkCreateAccount">
+                    New user? Would you like to create an account?</a>
+            </p>
+        </form>
+        <!-- Create an account form-->
+        <form class = "form formHidden" id = "createAccount">
+            <h1 class = "formTitle">Create Account</h1>
+            <div class = "formMessage formMessageError"></div>
+            <div class = "formInputGroup"> 
+                <input type = "text" id = "signUp" id ="signUpName" class="formInput" 
+                autofocus placeholder="Username" required>
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <div class = "formInputGroup"> 
+                <input type = "text" class="formInput" id = "signUp" id ="signUpEmail" autofocus placeholder="Email" required>
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <div class = "formInputGroup"> 
+                <input type = "password" class="formInput " id = "signUp" id = "loginPassword" autofocus placeholder="Password" required>
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <div class = "formInputGroup"> 
+                <input type = "password" class="formInput " id = "signUp" id = "loginPassword" autofocus placeholder="Confirm Password"required>
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <button type = "submit" class="formButton">Continue</button>
+            <p class="formText">
+                <a href="./" class = "formLink"  id = "linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+    <script src = "./index.js"></script>
+</body>
+</html>
